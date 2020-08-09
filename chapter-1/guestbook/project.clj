@@ -1,9 +1,14 @@
+(require 'cemerick.pomegranate.aether)
+(cemerick.pomegranate.aether/register-wagon-factory!
+ "http" #(org.apache.maven.wagon.providers.http.HttpWagon.))
+
 (defproject guestbook "0.1.0-SNAPSHOT"
 
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
 
-  :dependencies [[org.clojure/clojure "1.8.0"]
+  :dependencies [ [org.flatland/ordered "1.5.7"]
+                 [org.clojure/clojure "1.8.0"]
                  [selmer "1.0.0"]
                  [markdown-clj "0.9.85"]
                  [luminus/config "0.5"]
