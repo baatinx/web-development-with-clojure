@@ -1,0 +1,8 @@
+;; ****************************************************************************************************
+;; chapter 1 - Getting Your Feet Wet
+
+1. The db namespace houses the database related logic and serves as the model
+layer for the application
+
+2. We’ll create a query called save-message!. Note that the name ends with ! to indicate 
+that it mutatesdata.
